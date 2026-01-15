@@ -31,7 +31,7 @@
             border: 1px solid #3f0071 !important;
         }
 
-        .card-header {
+        .bloc {
             background-color: #610094 !important;
             color: #ffffff !important;
             font-weight: 600;
@@ -70,18 +70,18 @@
             opacity: 0.5;
         }
 
-        .component-card {
+        .composent {
             background-color: #0a0a0a !important;
             border: 1px solid #610094 !important;
             transition: transform 0.2s;
         }
 
-        .component-card:hover {
+        .composent:hover {
             transform: translateY(-5px);
             border-color: #3f0071 !important;
         }
 
-        .price-tag {
+        .prix {
             background-color: #610094 !important;
             color: #ffffff !important;
             padding: 0.5rem 1rem;
@@ -132,6 +132,54 @@
             vertical-align: -.125em;
             fill: currentColor;
         }
+
+        /* Build Streamer - Pourpre */
+    .build-streamer {
+  border: 3px solid #610094 !important;
+  box-shadow: 0 0 20px rgba(172, 35, 199, 0.5) !important;
+}
+
+    .build-streamer .card-header {
+  background: linear-gradient(135deg, #610094 0%, #610094 100%) !important;
+  border-bottom: 3px solid #610094 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+    .build-streamer .card {
+  border-color: #610094 !important;
+  transition: all 0.3s ease !important;
+}
+
+    .build-streamer:hover {
+  border-color: #610094 !important;
+  box-shadow: 0 0 30px rgba(112, 48, 189, 0.8) !important;
+  transform: translateY(-5px) !important;
+}
+
+
+.build-workstation-pro {
+  border: 3px solid #dc3545 !important;
+  box-shadow: 0 0 20px rgba(220, 53, 69, 0.5) !important;
+}
+
+    .build-workstation-pro .card-header {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%) !important;
+  border-bottom: 3px solid #a71e2a !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+    .build-workstation-pro .card {
+  border-color: #dc3545 !important;
+  transition: all 0.3s ease !important;
+}
+
+    .build-workstation-pro:hover {
+  border-color: #ff4757 !important;
+  box-shadow: 0 0 30px rgba(220, 53, 69, 0.8) !important;
+  transform: translateY(-5px) !important;
+}
 
 
  
