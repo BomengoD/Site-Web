@@ -1,22 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Page d'acceuil</title>
-        <link rel="stylesheet" href="./css/index.css">
-        <link rel="icon" href="" type="image/x-icon">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-        <script src="./javascript/index.js"></script>
-    </head>
-    <body class="d-flex">
-
-       
-        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-        <symbol id="bootstrap" viewBox="0 0 118 94">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
-        </symbol>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PCBuild Maker - Page d'accueil</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="home" viewBox="0 0 16 16">
             <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
         </symbol>
@@ -34,67 +27,216 @@
         <symbol id="grid" viewBox="0 0 16 16">
             <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
         </symbol>
-        <symbol id="collection" viewBox="0 0 16 16">
-            <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"/>
-        </symbol>
-        </svg>
+    </svg>
 
-            <div class="d-flex flex-column p-3 text-bg-dark" style="width: 280px;">
-                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-                <span class="fs-4">Build Maker</span>
-                </a>
-                <hr>
-                <ul class="nav nav-pills flex-column mb-auto">
+    <main class="d-flex flex-nowrap">
+        <!-- Sidebar -->
+        <div class="sidebar d-flex flex-column flex-shrink-0 p-3" style="width: 280px;">
+            <a href="test2.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <img src="assets/images/logo.png" alt="Logo PC Build Maker" width="40" height="32" class="me-2 rounded">
+                <span class="fs-4">PC Build Maker</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
                     <a href="#" class="nav-link active" aria-current="page">
-                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"/></svg>
-                    Guide
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"/></svg>
+                        Guide
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link text-white">
-                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#collection"/></svg>
-                    Composants
+                    <a href="#" class="nav-link">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                        Composants
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link text-white">
-                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-                    Builds complets
+                    <a href="#" class="nav-link">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"/></svg>
+                        Builds complets
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link text-white">
-                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
-                    Sites de référencement
+                    <a href="./pages/siteref.html" class="nav-link">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+                        Sites de référencement
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link text-white">
-                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-                    A propos de nous
+                    <a href="./pages/Apropos.html" class="nav-link">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+                        A propos de nous
                     </a>
                 </li>
+            </ul>
+            <hr>
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg width="32" height="32" class="rounded-circle me-2" style="fill: #610094;">
+                        <rect width="32" height="32" rx="16"/>
+                    </svg>
+                    <strong>Moi</strong>
+                </a>
+                <ul class="dropdown-menu text-small shadow">
+                    <li><a class="dropdown-item" href="#">Nouveau projet...</a></li>
+                    <li><a class="dropdown-item" href="#">Paramètres</a></li>
+                    <li><a class="dropdown-item" href="#">Profil</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Se déconnecter</a></li>
                 </ul>
-                <hr>
-                <div class="dropdown">
-                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src=".\assets\images\thumb-1920-399924.jpg" alt="" width="32" height="32" class="rounded-circle me-2">
-                        <strong>moi</strong>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                        <li><a class="dropdown-item" href="#">New project...</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Sign out</a></li>
-                    </ul>
+            </div>
+        </div>
+
+        
+        <div class="flex-grow-1 p-4 scrollarea">
+            
+            <div class="hero-section">
+                <h1 class="display-4 fw-bold mb-3">Bienvenue sur PC Build Maker</h1>
+                <p class="lead">Créez votre configuration PC idéale. Composant par composant, nous vous guiderons selon vos préférences et budgets.</p>
+                <button class="btn btn-light btn-lg mt-3">Commencer mon build</button>
+            </div>
+
+            
+            <div class="mb-5">
+                <h2 class="mb-4">Catégories de composants</h2>
+                <div class="row g-3">
+                    <div class="col-md-3">
+                        <div class="component-card p-4 rounded text-center">
+                            <h3>Processeurs</h3>
+                            <p class="small text-muted mb-0">CPU Intel & AMD</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="component-card p-4 rounded text-center">
+                            <h4>Cartes graphiques</h4>
+                            <p class="small text-muted mb-0">GPU NVIDIA & AMD</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="component-card p-4 rounded text-center">
+                            <h5>Memoire RAM</h5>
+                            <p class="small text-muted mb-0">DDR4 & DDR5</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="component-card p-4 rounded text-center">
+                            <h5>Alimentations</h5>
+                            <p class="small text-muted mb-0">PSU modulaires</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div>
-                <h1>Bienvenue sur Build Maker</h1>
-                <p>Votre guide ultime pour construire le PC de vos rêves !</p>
+
+            <!-- Les recommendations -->
+            <div class="mb-5">
+                <h2 class="mb-4">Builds recommandés</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Build Gaming 1080p
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-2">
+                                    <span class="badge bg-success">Gaming</span>
+                                    <span class="badge bg-info">Budget</span>
+                                </div>
+                                <ul class="list-unstyled small">
+                                    <li>AMD Ryzen 5 7600</li>
+                                    <li>RTX 4060 Ti</li>
+                                    <li>16GB DDR5</li>
+                                    <li>1TB NVMe SSD</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="price-tag">899 euros</span>
+                                    <button class="btn btn-primary btn-sm">Voir détails</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Build Gaming 1440p
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-2">
+                                    <span class="badge bg-success">Gaming</span>
+                                    <span class="badge bg-warning">Performance</span>
+                                </div>
+                                <ul class="list-unstyled small">
+                                    <li>AMD Ryzen 7 7800X3D</li>
+                                    <li>RTX 4070 Ti Super</li>
+                                    <li>32GB DDR5</li>
+                                    <li>2TB NVMe SSD</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="price-tag">1649 euros</span>
+                                    <button class="btn btn-primary btn-sm">Voir détails</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Build Bureautique
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-2">
+                                    <span class="badge bg-secondary">Office</span>
+                                    <span class="badge bg-info">Budget</span>
+                                </div>
+                                <ul class="list-unstyled small">
+                                    <li>Intel i5-13400F</li>
+                                    <li>Intel UHD 730</li>
+                                    <li>16GB DDR4</li>
+                                    <li>512GB SSD</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="price-tag">549 euros</span>
+                                    <button class="btn btn-primary btn-sm">Voir détails</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-    </body>
+
+            <!-- Le guide en bas de page -->
+            <div>
+                <h2 class="mb-4">Guide débutant</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Comprendre les composants essentiels</h3>
+                        <p class="card-text">Découvrez le rôle de chaque composant pour bien démarrer dans l'assemblage de votre PC.</p>
+                        <div class="row g-3 mt-3">
+                            <div class="col-md-6">
+                                <h4>Le processeur (CPU)</h4>
+                                <p class="small text-muted">Le cerveau de votre PC, responsable de tous les calculs.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>La carte graphique (GPU)</h4>
+                                <p class="small text-muted">Gere l'affichage et les performances en jeu.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>La memoire RAM</h5>
+                                <p class="small text-muted">Stockage temporaire rapide pour vos applications.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>La carte mere</h5>
+                                <p class="small text-muted">Connecte tous les composants entre eux.</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary mt-4">Lire le guide complet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
 </html>
